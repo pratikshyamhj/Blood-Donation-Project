@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Century Gothic;
+  font-size: 25px;
+}
+/* Example for making the header width flexible */
+
+
+h1{
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 50px;
+}
+.nevigation{
+  background-color:red;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+
+
+.nevigation ul{
+  display: inline-flex;
+  list-style: none;
+  margin-top: 5px;
+}
+.nevigation ul li{
+ width: 100px;
+ margin: 10px;
+ padding: 0,20px;
+
+}
+.nevigation a{
+ position: relative;
+ text-decoration: none;
+ color: aliceblue;
+ font-weight: bold;
+ font-size: 15px;
+
+}
+
+.nevigation a::after{
+  content:'';
+  position: absolute;
+  left:0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+ transform: scaleX(0);
+transition: transform .5s;
+
+
+
+}
+.nevigation a:hover::after{
+  transform:scaleX(1);
+}
+
+.text #donateBtn{
+  width: 130px;
+  height: 60px;
+  background: red;
+  border: 5px solid maroon;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 30px;
+  transition: .5s;
+  margin-left: 270px;
+  margin-top: 70px;
+  
+  
+}
+.text #donateBtn:hover{
+  background: #fff;
+  color: #162938;
+}
+
+
+
+
+.form-box h2{
+  font-size: 2em;
+  color: #162938;
+  text-align: center;
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #162938;
+  margin:30px 0;
+}
+.input-box label{
+  position: absolute;
+  top:50%;
+  left: 5px;
+  transform: translate(50%);
+  font-size: len;
+  color: #162938;
+  font-weight: 500;
+  pointer-events:none ;
+
+}
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border:none;
+  outline: none;
+}
+
+.input-box .icon{
+  position: absolute;
+  right: 8px;
+  font-size:1.2em;
+  color: #162938;
+  line-height: 57px;
+}
+
+
+
+.footer {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  margin-top: -25px;
+  color: white;
+
+
+}
+.glow {
+color: #fff;
+text-align: center;
+animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+from {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+}
+
+to {
+  text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+}
+}
+.text{
+  position: absolute;
+  top: 40%;
+  left: 28%;
+  color: white;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+.gradient-overlay{
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255,0) 0%, rgba(0, 0, 0, 0.7)100%);
+  pointer-events: none;
+  margin-top: 0;
+
+}
+.services-section {
+text-align: center;
+padding-right: 20px; /* Add some padding to align content away from the left edge */
+}
+.service-section h3{
+padding: 5px 20px 5px 5px; 
+
+}
+h3{
+color: purple;
+font-style: italic;
+font-weight: bold;
+}
+.services-section  {
+
+display: inline;
+margin-right: 50px;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  footer p {
+    margin-bottom: 10px;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+
+  }
+  .left-align-footer {
+text-align: left;
+}
+.scroll-to-top-btn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 10px 15px;
+background-color: #f44336;
+color: #fff;
+text-decoration: none;
+border-radius: 4px;
+}
+
+.scroll-to-top-btn:hover {
+background-color: #555;
+}
+.about-section {
+    display: none;
+    padding: 20px;
+    background-color: maroon;
+    color: white;
+    text-align: center;
+  }
+.divflex{
+display: flex;
+justify-content: space-around;
+background-color: lightgoldenrodyellow;
+}
